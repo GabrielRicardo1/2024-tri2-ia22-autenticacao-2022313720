@@ -64,8 +64,6 @@ git init
 touch .gitignore
 ```
 
-### todos os comandos vão rodar automaticamente quando você pressionar enter, menos o touch `src/app.ts` então só aperte enter de novo quando os comandos anteriores terminarem.
-
 <div style="display: inline_block"><br/>
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
