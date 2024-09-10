@@ -35,7 +35,7 @@
 ### `*` Autorização: É o processo de determinar se um usuário autenticado tem permissão para acessar um recurso específico. Exemplo: depois de autenticado, o sistema verifica se você tem permissão para acessar determinada página ou funcionalidade.
 
 <div style="display: inline_block"><br/>
-   <img align="center" alt="C" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogdagcom.wordpress.com%2F2019%2F09%2F23%2Fautenticacao-e-autorizacao-de-microservices%2F&psig=AOvVaw1C8QSSScQ0aqRdXtP0KfdI&ust=1725026714485000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiDyrevmogDFQAAAAAdAAAAABAJ" />
+   <img align="center" alt="C" src="ignore-imagens/autentvsauto.png" />
 </div>
 
 <div style="display: inline_block"><br/>
@@ -43,7 +43,7 @@
 </div>
 
 # `1.`iniciando o nosso projeto:
-### abra o terminal (ctrl + ' ) e execute os comandos abaixo. não se preocupe, pode executar tudo de uma vez! 
+### abra o terminal (ctrl + ' ) e execute os comandos abaixo. talvez apareça uma mensagem de erro/atenção mas não se preocupe, pode executar tudo de uma vez! 
 
 ```
 npm init -y
@@ -67,5 +67,3 @@ touch .gitignore
 <div style="display: inline_block"><br/>
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
-
-
