@@ -38,3 +38,36 @@
    <img align="center" alt="C" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogdagcom.wordpress.com%2F2019%2F09%2F23%2Fautenticacao-e-autorizacao-de-microservices%2F&psig=AOvVaw1C8QSSScQ0aqRdXtP0KfdI&ust=1725026714485000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiDyrevmogDFQAAAAAdAAAAABAJ" />
 </div>
 
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+
+# `1.`iniciando o nosso projeto:
+### abra o terminal (ctrl + ' ) e execute os comandos abaixo. não se preocupe, pode executar tudo de uma vez! 
+
+```
+npm init -y
+npm install express sqlite3 sqlite
+npm install --save-dev typescript nodemon ts-node @types/express
+npx tsc --init
+
+mkdir public
+touch public/index.html
+touch public/main.css
+touch public/main.js
+
+mkdir src
+touch src/index.ts
+touch src/database.ts
+
+git init
+touch .gitignore
+```
+
+### todos os comandos vão rodar automaticamente quando você pressionar enter, menos o touch `src/app.ts` então só aperte enter de novo quando os comandos anteriores terminarem.
+
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+
+
