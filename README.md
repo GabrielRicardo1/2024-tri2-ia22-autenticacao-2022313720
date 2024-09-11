@@ -67,3 +67,13 @@ touch .gitignore
 <div style="display: inline_block"><br/>
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
+
+### como esse tutorial é focado em combinar os conceitos de autenticação e CRUD, me abstenho de refazer tudo do zero. você vai precisar fazer meu tutorial anterior e quando concluir pode voltar aqui para darmos continuidade
+
+# faça o tutorial 1 aqui: [TUTORIAL](git@github.com:GabrielRicardo1/2024-IA22-2TRI.git)
+
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+
+### pronto, podemos começar. (sacabagem, a maior parte já foi.)
