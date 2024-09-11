@@ -70,7 +70,9 @@ touch .gitignore
 
 ### como esse tutorial é focado em combinar os conceitos de autenticação e CRUD, me abstenho de refazer tudo do zero. você vai precisar fazer meu tutorial anterior e quando concluir pode voltar aqui para darmos continuidade
 
-# faça o tutorial 1 aqui: [TUTORIAL](git@github.com:GabrielRicardo1/2024-IA22-2TRI.git)
+# faça o tutorial 1 aqui: 
+<a href="https://github.com/GabrielRicardo1/2024-IA22-2TRI" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px;">Tutorial Codespace</a>
+
 
 <div style="display: inline_block"><br/>
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
