@@ -42,6 +42,10 @@
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
 
+### a primeira coisa que devemos fazer antes de começar é criar um codespace. não sabe fazer isso? veja o tutorial abaixo:
+<a href="https://github.com/prof-varela/tutoriais/blob/main/tutorial/codespace.md" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px;">Tutorial Codespace</a>
+
+
 # `1.`iniciando o nosso projeto:
 ### abra o terminal (ctrl + ' ) e execute os comandos abaixo. talvez apareça uma mensagem de erro/atenção mas não se preocupe, pode executar tudo de uma vez! 
 
