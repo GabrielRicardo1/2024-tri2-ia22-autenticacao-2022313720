@@ -51,8 +51,8 @@
 
 ```
 npm init -y
-npm install express sqlite3 sqlite
-npm install --save-dev typescript nodemon ts-node @types/express
+npm install express cors sqlite3 sqlite
+npm install --save-dev typescript nodemon ts-node @types/express @types/cors
 npx tsc --init
 
 mkdir public
@@ -63,6 +63,7 @@ touch public/main.js
 mkdir src
 touch src/index.ts
 touch src/database.ts
+touch src/app.ts
 
 git init
 touch .gitignore
@@ -72,6 +73,8 @@ touch .gitignore
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
 
+
+# `2.` fazendo a parte bruta
 ### como esse tutorial é focado em combinar os conceitos de autenticação e CRUD, me abstenho de refazer tudo do zero. você vai precisar fazer meu tutorial anterior e quando concluir pode voltar aqui para darmos continuidade
 
 # faça o tutorial 1 aqui: 
@@ -82,4 +85,5 @@ touch .gitignore
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
 
-### pronto, podemos começar. (sacanagem, a maior parte já foi.)
+# `3.`
+###### pronto, podemos começar. (sacanagem, a maior parte já foi.)
