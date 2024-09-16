@@ -652,145 +652,125 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```css
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(https://raw.githubusercontent.com/Edson-Edu/2024-IA22-2TRI/main/public/seattle.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #f5f5f5; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  line-height: 1.6;
-  transition: background-color 0.3s ease;
-}
-
-.container {
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 15px; 
-  padding: 30px;
-  max-width: 800px;
-  margin: 50px auto;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-  transform: scale(1.03); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
-}
-
-h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  color: #e0e0e0; 
-  transition: color 0.3s ease;
-}
-
-h3 {
-  font-size: 1.7em;
-  margin-bottom: 25px;
-  color: #b0b0b0; 
-  transition: color 0.3s ease;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
-  padding: 12px;
-  border: 1px solid #666;
-  border-radius: 8px;
-  margin: 8px;
-  width: calc(50% - 24px);
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #f5f5f5;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus {
-  background-color: rgba(255, 255, 255, 0.25); 
-  border-color: #007BFF; 
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
-}
-
-form button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007BFF;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-form button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05); 
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-}
-
-table th, table td {
-  padding: 12px;
-  border: 1px solid #555; 
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-table th {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #e0e0e0;
-}
-
-table td {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-table button {
-  padding: 6px 12px;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 0.95em;
-  margin: 3px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-table button.excluir {
-  background-color: #dc3545;
-}
-
-table button.excluir:hover {
-  background-color: #c82333;
-  transform: scale(1.05);
-}
-
-table button.editar {
-  background-color: #28a745; 
-}
-
-table button.editar:hover {
-  background-color: #218838;
-  transform: scale(1.05); 
-}
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://i.gifer.com/76cI.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
+    margin-bottom: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ff4d4d;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #1a1a1a;
+    color: #ff4d4d;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
+    color: #ff4d4d;
+    margin-top: 30px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ff4d4d;
+  }
+  
+  th {
+    background-color: #1a1a1a;
+  }
+  
+  tbody tr:hover {
+    background-color: #262626;
+  }
+  
+  table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .excluir {
+    background-color: #ff3333;
+    color: white;
+  }
+  
+  .excluir:hover {
+    background-color: #b30000;
+  }
+  
+  .editar {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .editar:hover {
+    background-color: #cc5200;
+  }
+  
 ```
 
 #### nada fora da curva, o `CSS` só estiliza a página e deixa agradável...
+
+
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmFhY2N4Z2JheG9seDlueGoxejE5ZjF1NW1hZ2NzNXV0MDM1OTZ5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.webp" />
+</div>
+
 
 # agora vá ao arquivo `index2.css` e adicione o seguinte código: 
 
@@ -947,3 +927,37 @@ pre {
     width: 100%;
 }
 ```
+
+# testes e funcionalidades.
+## no terminal (ctrl + ') digite `npm run dev` vai aparecer uma mensagem no canto inferior direito da tela para abrir no navegador, selecione essa opção.
+
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://i.gifer.com/XOsX.gif" width="200" height="200"/>
+</div>
+
+
+### agora com o site aberto, no usuário insira `coutinho` e a senha é: `senha`
+## e pronto, você está logado e tem permissão para editar e excluir os outros usuários. se não foi redirecionado automaticamente basta selecionar as opções do site mesmo.
+
+### na pasta .gitignore adicione:
+
+```
+node_modules/
+dist/
+database.sqlite/
+```
+
+### por fim, só precisamos adicionar, comitar e subir as mudanças feitas para o GitHub. primeiro de tudo, abra o terminal e use `Ctrl + c` para fechar o nosso servidor web e copie, cole e dê enter nesse script abaixo no terminal. tudo de uma vez mesmo, quem se importa? vai dar certo:
+
+```bash
+git add . ; git commit -m ... ; git push origin main
+```
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+</div>
+
+# e foi isso, obrigado pela atenção. me segue no insta pra eu saber quem fez meu tutorial: `couto_71`
+
+<div style="display: inline_block"><br/>
+   <img align="center" alt="C" src="https://media.giphy.com/media/A5OPIlNp8fHQbATsvC/giphy.gif?cid=ecf05e47olz7yo3qbv7py9wlyox5oqd83bcbrmekas0czm25&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+</div>
