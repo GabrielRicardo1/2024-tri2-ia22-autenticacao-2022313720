@@ -50,40 +50,18 @@
 ### abra o terminal (ctrl + ' ) e execute os comandos abaixo. talvez apareça uma mensagem de erro/atenção mas não se preocupe, pode executar tudo de uma vez! 
 
 ```
-npm init -y
-npm install express cors sqlite3 sqlite
-npm install --save-dev typescript nodemon ts-node @types/express @types/cors
-npx tsc --init
+npm init -y && \
+npm install express cors sqlite3 sqlite && \
+npm install --save-dev typescript nodemon ts-node @types/express @types/cors && \
+npx tsc --init && \
+mkdir -p src public src/services src/key-mappers && \
+touch src/app.ts src/database.ts public/index.html public/index2.css public/index.css public/listagem.html public/main.js initial-users.json src/services/user.services.ts src/key-mappers/addAliasDots.ts src/key-mappers/index.ts
 
-mkdir public
-touch public/index.html
-touch public/main.css
-touch public/main.js
-
-mkdir src
-touch src/index.ts
-touch src/database.ts
-touch src/app.ts
-
-git init
-touch .gitignore
 ```
 
 <div style="display: inline_block"><br/>
    <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
 
-
-# `2.` fazendo a parte bruta
-### como esse tutorial é focado em combinar os conceitos de autenticação e CRUD, me abstenho de refazer tudo do zero. você vai precisar fazer meu tutorial anterior e quando concluir pode voltar aqui para darmos continuidade
-
-# faça o tutorial 1 aqui: 
-<a href="https://github.com/GabrielRicardo1/2024-IA22-2TRI" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px;">Tutorial Base obrigatório</a>
-
-
-<div style="display: inline_block"><br/>
-   <img align="center" alt="C" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-</div>
-
-# `3.`
-###### pronto, podemos começar. (sacanagem, a maior parte já foi.)
+# `2.`
+# 

@@ -1,198 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #0d0d0d;
-      color: #ff4d4d;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      background-image: url('https://i.gifer.com/76cI.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    form {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
-      margin-bottom: 30px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input[type="text"], input[type="email"] {
-      padding: 10px;
-      border: 1px solid #ff4d4d;
-      border-radius: 4px;
-      font-size: 14px;
-      background-color: #1a1a1a;
-      color: #ff4d4d;
-    }
-
-    button[type="submit"] {
-      background-color: #ff4d4d;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #cc0000;
-    }
-
-    table {
-      width: 100%;
-      max-width: 800px;
-      border-collapse: collapse;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
-      color: #ff4d4d;
-    }
-
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #ff4d4d;
-    }
-
-    th {
-      background-color: #1a1a1a;
-    }
-
-    tbody tr:hover {
-      background-color: #262626;
-    }
-
-    .excluir, .editar {
-      background-color: #ff3333;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .editar {
-      background-color: #ff6600;
-    }
-
-    .excluir:hover {
-      background-color: #b30000;
-    }
-
-    .editar:hover {
-      background-color: #cc5200;
-    }
-  </style>
+  <title>Gerenciamento dos Tokens</title>
+  <link rel="stylesheet" href="index2.css">
+  <script defer src="main.js"></script>
 </head>
 
 <body>
-  <form>
-    <input type="text" name="name" placeholder="Nome">
-    <input type="email" name="email" placeholder="Email">
-    <button type="submit">Cadastrar</button>
-  </form>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!--  -->
-    </tbody>
-  </table>
-
-  <script>
-    // 
-    const form = document.querySelector('form')
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault()
-
-      const name = form.name.value
-      const email = form.email.value
-
-      await fetch('/users', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email })
-      })
-
-      form.reset()
-      fetchData()
-    })
-
-    // 
-    const tbody = document.querySelector('tbody')
-
-    async function fetchData() {
-      const resp = await fetch('/users')
-      const data = await resp.json()
-
-      tbody.innerHTML = ''
-
-      data.forEach(user => {
-        const tr = document.createElement('tr')
-        tr.innerHTML = `
-          <td>${user.id}</td>
-          <td>${user.name}</td>
-          <td>${user.email}</td>
-          <td>
-            <button class="excluir">Excluir</button>
-            <button class="editar">Editar</button>
-          </td>
-        `
-
-        const btExcluir = tr.querySelector('button.excluir')
-        const btEditar = tr.querySelector('button.editar')
-
-        btExcluir.addEventListener('click', async () => {
-          await fetch(`/users/${user.id}`, { method: 'DELETE' })
-          tr.remove()
-        })
-
-        btEditar.addEventListener('click', async () => {
-          const name = prompt('Novo nome:', user.name)
-          const email = prompt('Novo email:', user.email)
-
-          await fetch(`/users/${user.id}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, email })
-          })
-
-          fetchData()
-        })
-
-        tbody.appendChild(tr)
-      })
-    }
-
-    fetchData()
-  </script>
+  <header>
+    <h1>Gerenciamento dos Tokens</h1>
+    <p>Acompanhe os logs no console do navegador</p>
+  </header>
+  
+  <main>
+    <section class="login-section">
+      <form>
+        <div class="form-group">
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+    
+    <section class="actions-section">
+      <button class="get-token">Obter Token</button>
+      <button class="get-users">Listar Usuários</button>
+      <button class="logout">Sair</button>
+    </section>
+    
+    <section class="output-section">
+      <pre>
+        ...
+      </pre>
+    </section>
+  </main>
 </body>
 
 </html>
